@@ -52,7 +52,7 @@ public class Services {
         Long id = Long.parseLong(idMedico);
         JPAQueryFactory query = new JPAQueryFactory(entityManager);
 
-        List<String> horariosAgendados = query.select(qAgenda.horario).from(qAgenda).where(qAgenda.horario.eq(data).and(qAgenda.idMedico.eq(id))).fetch();
+        List<String> horariosAgendados = query.select(qAgenda.horario).from(qAgenda).where(qAgenda.data.eq(data).and(qAgenda.idMedico.eq(id))).fetch();
         List<String> horariosDisponiveis = new ArrayList<>();
 
         for(int i = 8; i < 18; i++){
