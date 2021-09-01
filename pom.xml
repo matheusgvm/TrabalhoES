@@ -10,11 +10,11 @@
 	</parent>
 	<groupId>com.cefet</groupId>
 	<artifactId>clinicamedica</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.4</version>
 	<name>clinicamedica</name>
 	<description>Trabalho de ES</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -93,6 +93,7 @@
 						</exclude>
 					</excludes>
 				</configuration>
+				<version>2.5.4</version>
 			</plugin>
 
 			<plugin>

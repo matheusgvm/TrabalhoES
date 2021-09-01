@@ -14,8 +14,7 @@ public class Agenda {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long codigo;
 
-    @ManyToOne
-    private Medico medico;
+    private Long idMedico;
 
     private String data;
     private String horario;
